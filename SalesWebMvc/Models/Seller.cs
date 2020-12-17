@@ -28,7 +28,6 @@ namespace SalesWebMvc.Models
         [DisplayFormat(DataFormatString ="{0:F2}")]
         public Double BaseSalary { get; set; }
 
-        [Required]
         public Department Department { get; set; }
         public int DepartmentId { get; set; }
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
